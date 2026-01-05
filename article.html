@@ -1,0 +1,1443 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Article</title>
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1767622562983">
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/inputmask.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/swiper.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/slider.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/popup.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/menu.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/lightgallery.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/gallery.min.js?v=1767622562983"></script>
+		<script type="module" crossorigin="" src="./js/topinfo.min.js?v=1767622562983"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/slider.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/popup.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/menu.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/gallery.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/topinfo.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/header.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/promo.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/text-section.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/news.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/letstalk.min.css?v=1767622562983">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1767622562983">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="topinfo">
+				<div class="topinfo__container">
+					<div class="topinfo__body">
+						<div class="topinfo__img">
+							<img alt="Image" loading="lazy" src="./assets/img/topinfo-img.webp">
+						</div>
+						<div class="topinfo__content">
+							<div class="topinfo__content-body">
+								<div class="topinfo__logo">
+									<img src="./assets/img/icons/np-logo.svg" alt="Image" loading="lazy">
+								</div>
+								<div class="topinfo__text">Безкоштовна доставка Новою Поштою на будь-яке замовлення!</div>
+							</div>
+							<button data-fls-popup-link="popup-order" type="button" class="topinfo__btn button button--border button--small">Замовити хімчистку</button>
+						</div>
+						<button type="button" class="topinfo__close">
+							<svg width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.146447 0.853554C-0.0488156 0.658291 -0.0488156 0.341709 0.146447 0.146447C0.341709 -0.0488155 0.658292 -0.0488155 0.853554 0.146447L6 5.29289L11.1464 0.146447C11.3417 -0.0488155 11.6583 -0.0488155 11.8536 0.146447C12.0488 0.341709 12.0488 0.658291 11.8536 0.853554L6.70711 6L11.8536 11.1464C12.0488 11.3417 12.0488 11.6583 11.8536 11.8536C11.6583 12.0488 11.3417 12.0488 11.1464 11.8536L6 6.70711L0.853554 11.8536C0.658292 12.0488 0.341709 12.0488 0.146447 11.8536C-0.048815 11.6583 -0.048815 11.3417 0.146447 11.1464L5.29289 6L0.146447 0.853554Z" fill="currentColor"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<header class="header" data-top-position="">
+				<div class="header__container">
+					<div class="header__body">
+						<a href="#" class="header__logo">
+							<img src="./assets/img/logo.svg" alt="logo">
+						</a>
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu__body" data-top-position="">
+								<div class="menu__wrapper">
+									<ul class="menu__list">
+										<li class="menu__item">
+											<a data-fls-popup-link="popup-order" href="#" class="menu__link link">Послуги та ціни</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link link">Як це працює</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link link">Доставка та оплата</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link link">Відгуки</a>
+										</li>
+										<li class="menu__item">
+											<a href="#" class="menu__link link">Блог</a>
+										</li>
+									</ul>
+									<button data-fls-popup-link="popup-order" data-open-step="steps-form" data-step-index="0" type="button" class="menu__btn button">Замовити химчистку</button>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div class="top-section" data-top-position="">
+					<div class="top-section__bg">
+						<img alt="Image" loading="lazy" src="./assets/img/article-bg.webp">
+					</div>
+					<section class="promo">
+						<div class="promo__container">
+							<div class="promo__inner">
+								<h1 class="promo__title title title--h1">Безкоштовна доставка Новою Поштою</h1>
+								<div class="promo__text">
+									Вам не потрібно платити за доставку, навіть якщо після консультаціі ви приймете рішення не виконувати
+				замовлення. Ми
+				покриваємо вартість доставки в обидві сторони — ви сплачуєте лише за професійно виконану роботу.
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="breadcrumbs">
+						<div class="breadcrumbs__container">
+							<a href="#" class="breadcrumbs__link">Головна</a>
+							<a href="#" class="breadcrumbs__link">Блог</a>
+							<span class="breadcrumbs__link is-active">Безкоштовна доставка Новою Поштою</span>
+						</div>
+					</div>
+				</div>
+				<section class="text-section">
+					<div class="text-section__container">
+						<div class="text-section__content">
+							<h2>Безкоштовна доставка Новою Поштою</h2>
+							<p class="text-large">
+								The field of aesthetic medicine is undergoing a profound transformation, shifting its focus from purely
+				corrective
+				procedures—like filling lines and mechanical lifting—to advanced regenerative and preventative
+				treatments. This new era
+				is defined by utilizing the body’s own biological mechanisms to restore skin health, vitality, and
+				structure from
+				within.
+							</p>
+							<div class="divider"></div>
+							<img alt="Image" loading="lazy" src="./assets/img/article/image-1.webp">
+							<h3>Our Core Mission: Standards Shaping the Future</h3>
+							<p>
+								<strong>Our primary</strong>
+								goal is simple: to set new standards in aesthetic medicine through
+				innovation and scientific
+				rigor. We aim
+				for products that offer maximal efficacy and predictable results, utilizing advanced technologies like
+				PDRN and
+				4D-Matrix.
+							</p>
+							<h4>Expertise You Can Trust</h4>
+							<p>
+								<b>We boast</b>
+								a seasoned team of over 2,000 specialists and 10 years of experience in the rapidly
+				evolving
+				aesthetic sphere. We stay ahead of the curve so you don’t have to. Our expertise covers four key brands:
+				Phillex, TwAc, APPeex, and FORTOX®.
+							</p>
+							<div class="text-section__cases">
+								<div class="text-section__cases-head">
+									<h2 class="text-section__cases-title">Реальні кейси Cleans:</h2>
+									<div class="text-section__cases-arrows" data-swiper-lock="">
+										<button type="button" class="swiper-button-prev swiper-button-gray">
+											<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15 8C15 7.72386 14.7761 7.5 14.5 7.5H2.70711L5.85355 4.35355C6.04882 4.15829 6.04882 3.84171 5.85355 3.64645C5.65829 3.45118 5.34171 3.45118 5.14645 3.64645L1.14645 7.64645C0.951185 7.84171 0.951185 8.15829 1.14645 8.35355L5.14645 12.3536C5.34171 12.5488 5.65829 12.5488 5.85355 12.3536C6.04882 12.1583 6.04882 11.8417 5.85355 11.6464L2.70711 8.5H14.5C14.7761 8.5 15 8.27614 15 8Z" fill="currentColor"></path>
+											</svg>
+										</button>
+										<button type="button" class="swiper-button-next swiper-button-gray">
+											<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8C1 7.72386 1.22386 7.5 1.5 7.5H13.2929L10.1464 4.35355C9.95118 4.15829 9.95118 3.84171 10.1464 3.64645C10.3417 3.45118 10.6583 3.45118 10.8536 3.64645L14.8536 7.64645C15.0488 7.84171 15.0488 8.15829 14.8536 8.35355L10.8536 12.3536C10.6583 12.5488 10.3417 12.5488 10.1464 12.3536C9.95118 12.1583 9.95118 11.8417 10.1464 11.6464L13.2929 8.5H1.5C1.22386 8.5 1 8.27614 1 8Z" fill="currentColor"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div data-fls-slider="" class="text-section__cases-slider swiper">
+									<div data-fls-gallery="" class="text-section__cases-wrapper swiper-wrapper">
+										<a href="./assets/img/article/image-3.webp" class="text-section__cases-slide swiper-slide">
+											<img alt="Image" loading="lazy" src="./assets/img/article/image-3.webp">
+										</a>
+										<a href="./assets/img/article/image-4.webp" class="text-section__cases-slide swiper-slide">
+											<img alt="Image" loading="lazy" src="./assets/img/article/image-4.webp">
+										</a>
+										<a href="./assets/img/article/image-3.webp" class="text-section__cases-slide swiper-slide">
+											<img alt="Image" loading="lazy" src="./assets/img/article/image-3.webp">
+										</a>
+										<a href="./assets/img/article/image-4.webp" class="text-section__cases-slide swiper-slide">
+											<img alt="Image" loading="lazy" src="./assets/img/article/image-4.webp">
+										</a>
+									</div>
+								</div>
+							</div>
+							<h5>Our Guiding Principles</h5>
+							<p>
+								The
+								<a href="#">замовити читску одеял</a>
+								are essential to how we operate and serve our clients:
+							</p>
+							<ul>
+								<li>Innovation: Continuously implementing advanced technologies and methods.</li>
+								<li>Service: Maintaining the highest standards of partner service.</li>
+								<li>Education: Providing high-quality professional education for doctors.</li>
+								<li>Needs Fulfillment: Focused on the needs of patients and medical professionals.</li>
+							</ul>
+							<h6>Our Core Mission: Standards Shaping the Future</h6>
+							<p>
+								Our primary goal is simple: to set new standards in aesthetic medicine through innovation and scientific
+				rigor. We aim for products that offer maximal efficacy and predictable results, utilizing advanced
+				technologies like PDRN and 4D-Matrix.
+							</p>
+							<img alt="Image" loading="lazy" src="./assets/img/article/image-2.webp">
+							<h5>Expertise You Can Trust</h5>
+							<p>
+								We boast a seasoned team of over 2,000 specialists and 10 years of experience in the rapidly evolving
+				aesthetic sphere. We stay ahead of the curve so you don’t have to. Our expertise covers four key brands:
+				Phillex, TwAc, APPeex, and FORTOX®.
+							</p>
+							<table>
+								<thead>
+									<tr>
+										<td>Назва</td>
+										<td>Данні</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Розмір</td>
+										<td>43</td>
+									</tr>
+									<tr>
+										<td>Колір</td>
+										<td>Білий</td>
+									</tr>
+								</tbody>
+							</table>
+							<h5>Our Guiding Principles</h5>
+							<p>
+								The following core values are essential to how we operate and serve our clients:
+							</p>
+							<ol>
+								<li>Innovation: Continuously implementing advanced technologies and methods.</li>
+								<li>Service: Maintaining the highest standards of partner service.</li>
+								<li>Education: Providing high-quality professional education for doctors.</li>
+								<li>Needs Fulfillment: Focused on the needs of patients and medical professionals.</li>
+							</ol>
+							<div class="text-section__info">
+								<h5>Our Guiding Principles</h5>
+								<p>
+									The following core values are essential to how we operate and serve our clients:
+								</p>
+								<ul>
+									<li>Innovation: Continuously implementing advanced technologies and methods.</li>
+									<li>Service: Maintaining the highest standards of partner service.</li>
+									<li>Education: Providing high-quality professional education for doctors.</li>
+									<li>Needs Fulfillment: Focused on the needs of patients and medical professionals.</li>
+								</ul>
+								<a data-fls-popup-link="popup-order" href="#" class="button button--accent button--fw">Замовити послугу</a>
+							</div>
+							<h5>Our Core Mission: Standards Shaping the Future</h5>
+							<p>
+								Our primary goal is simple: to set new standards in aesthetic medicine through
+				innovation and scientific
+				rigor. We aim
+				for products that offer maximal efficacy and predictable results, utilizing advanced technologies like
+				PDRN and
+				4D-Matrix.
+							</p>
+							<h5>Expertise You Can Trust</h5>
+							<p>
+								We boast a seasoned team of over 2,000 specialists and 10 years of experience in the rapidly evolving
+				aesthetic sphere. We stay ahead of the curve so you don’t have to. Our expertise covers four key brands:
+				Phillex, TwAc, APPeex, and FORTOX®.
+							</p>
+						</div>
+						<aside class="text-section__aside" data-top-position="">
+							<div class="text-section__aside-title title title--h7">Не знаєте, як врятувати улюблену річ?</div>
+							<div class="text-section__aside-text">
+								Перш ніж відправляти річ у чистку, отримайте безкоштовну консультацію від технолога Cleans. Розкажіть
+				нам про матеріал, тип забруднення та особливості вашого виробу,
+							</div>
+							<figure class="text-section__aside-img">
+								<img alt="Image" loading="lazy" src="./assets/img/article/image-5.webp">
+							</figure>
+							<div class="text-section__aside-title title title--h7">Заповніть форму нижче, щоб почати діалог з експертом Cleans.</div>
+							<form action="#" class="text-section__aside-form">
+								<div class="text-section__aside-inputs">
+									<div class="input-field">
+										<label class="input-field__label">Ваше ім'я</label>
+										<input autocomplete="off" type="text" name="name" placeholder="напр. Іван" class="input-field__input input">
+									</div>
+									<div class="input-field">
+										<label class="input-field__label">Ваш телефон</label>
+										<input autocomplete="off" type="tel" name="phone" placeholder="+38 (096) ХХХ ХХ ХХ" class="input-field__input input" data-fls-input-mask="+38 (999) 999-99-99">
+									</div>
+								</div>
+								<label data-fls-checkbox="" class="checkbox">
+									<input class="checkbox__input" type="checkbox" value="1" name="personal data">
+									<span class="checkbox__text">Даю згоду на обробку персональних даних.</span>
+								</label>
+								<button type="submit" class="text-section__aside-send button button--accent button--fw">
+									<span>Отримати консультацію</span>
+									<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8C1 7.72386 1.22386 7.5 1.5 7.5H13.2929L10.1464 4.35355C9.95118 4.15829 9.95118 3.84171 10.1464 3.64645C10.3417 3.45118 10.6583 3.45118 10.8536 3.64645L14.8536 7.64645C15.0488 7.84171 15.0488 8.15829 14.8536 8.35355L10.8536 12.3536C10.6583 12.5488 10.3417 12.5488 10.1464 12.3536C9.95118 12.1583 9.95118 11.8417 10.1464 11.6464L13.2929 8.5H1.5C1.22386 8.5 1 8.27614 1 8Z" fill="currentColor"></path>
+									</svg>
+								</button>
+							</form>
+						</aside>
+					</div>
+				</section>
+				<section class="news">
+					<div class="news__container">
+						<div class="news__head">
+							<h2 class="news__title title title--h3">Новини та акції</h2>
+							<div class="news__nav">
+								<a href="#" class="news__all button">Всі статті</a>
+								<div class="news__arrows" data-swiper-lock="">
+									<button type="button" class="swiper-button-prev">
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M15 8C15 7.72386 14.7761 7.5 14.5 7.5H2.70711L5.85355 4.35355C6.04882 4.15829 6.04882 3.84171 5.85355 3.64645C5.65829 3.45118 5.34171 3.45118 5.14645 3.64645L1.14645 7.64645C0.951185 7.84171 0.951185 8.15829 1.14645 8.35355L5.14645 12.3536C5.34171 12.5488 5.65829 12.5488 5.85355 12.3536C6.04882 12.1583 6.04882 11.8417 5.85355 11.6464L2.70711 8.5H14.5C14.7761 8.5 15 8.27614 15 8Z" fill="currentColor"></path>
+										</svg>
+									</button>
+									<button type="button" class="swiper-button-next">
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8C1 7.72386 1.22386 7.5 1.5 7.5H13.2929L10.1464 4.35355C9.95118 4.15829 9.95118 3.84171 10.1464 3.64645C10.3417 3.45118 10.6583 3.45118 10.8536 3.64645L14.8536 7.64645C15.0488 7.84171 15.0488 8.15829 14.8536 8.35355L10.8536 12.3536C10.6583 12.5488 10.3417 12.5488 10.1464 12.3536C9.95118 12.1583 9.95118 11.8417 10.1464 11.6464L13.2929 8.5H1.5C1.22386 8.5 1 8.27614 1 8Z" fill="currentColor"></path>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div data-fls-slider="" class="news__slider swiper">
+							<div class="news__wrapper swiper-wrapper">
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-1.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-2.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-3.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-4.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-1.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-2.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-3.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+								<div class="news-card swiper-slide">
+									<figure class="news-card__img">
+										<img alt="Image" loading="lazy" src="./assets/img/blog/image-4.webp">
+									</figure>
+									<a href="#" class="news-card__title">Безкоштовна доставка Новою Поштою Безкоштовна доставка Новою Поштою</a>
+									<div class="news-card__text">
+										Вам не потрібно платити за логістику. Ми покриваємо вартість доставки в обидві сторони — ви
+						сплачуєте лише за чистоту та сервіс.Вам не потрібно платити за логістику. Ми покриваємо вартість
+						доставки в обидві сторони — ви сплачуєте лише за чистоту та сервіс.
+									</div>
+									<a href="#" class="news-card__link">
+										<span>Читати далі</span>
+										<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M4.64645 14.3536C4.45118 14.1583 4.45118 13.8417 4.64645 13.6464L10.2929 8L4.64645 2.35355C4.45119 2.15829 4.45119 1.84171 4.64645 1.64645C4.84171 1.45118 5.15829 1.45118 5.35355 1.64645L11.3536 7.64645C11.5488 7.84171 11.5488 8.15829 11.3536 8.35355L5.35355 14.3536C5.15829 14.5488 4.84171 14.5488 4.64645 14.3536Z" fill="currentColor"></path>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="letstalk">
+					<div class="letstalk__container">
+						<div class="letstalk__wrapper">
+							<div class="letstalk__body">
+								<div class="letstalk__content">
+									<h2 class="letstalk__title title title--h4">Маєте питання щодо складної плями чи матеріалу?</h2>
+									<div class="letstalk__text">
+										Не гайте час на здогадки. Залиште номер — наш менеджер зателефонує протягом 3 хвилин і
+						проконсультує
+						вас.
+									</div>
+									<form action="#" class="letstalk__form">
+										<input autocomplete="off" type="tel" name="phone" placeholder="Ваш телефон" class="letstalk__input input" data-fls-input-mask="+38 (999) 999-99-99">
+										<button type="submit" class="letstalk__btn button button--accent">Чекаю дзвінка</button>
+									</form>
+								</div>
+								<figure class="letstalk__img">
+									<img alt="Image" loading="lazy" src="./assets/img/letstalk/image.webp">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer fixed-block-hide">
+				<div class="footer__container">
+					<div class="footer__content">
+						<a href="#" class="footer__logo">
+							<img src="./assets/img/logo.svg" alt="Image" loading="lazy">
+						</a>
+						<div class="footer__body">
+							<div class="footer__phones">
+								<a href="tel:0961500500" class="footer__phone title title--h4">096 1 500 500</a>
+							</div>
+							<div class="footer__title title--h4">
+								Онлайн‑хімчистка нового
+								<br>
+								формату
+							</div>
+							<div class="footer__social">
+								<a href="#" class="footer__soc">
+									<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.4301 8.85898C11.2629 9.34445 8.9302 10.3492 5.43195 11.8734C4.86389 12.0993 4.56632 12.3203 4.53923 12.5363C4.49345 12.9015 4.95077 13.0453 5.57354 13.2412C5.65825 13.2678 5.74602 13.2954 5.836 13.3247C6.4487 13.5238 7.27289 13.7568 7.70135 13.7661C8.09 13.7745 8.52379 13.6142 9.0027 13.2854C12.2712 11.0791 13.9584 9.96386 14.0644 9.93982C14.1391 9.92286 14.2427 9.90153 14.3128 9.9639C14.383 10.0263 14.3761 10.1444 14.3687 10.1761C14.3234 10.3692 12.5282 12.0381 11.5992 12.9018C11.3096 13.1711 11.1041 13.3621 11.0621 13.4057C10.9681 13.5034 10.8722 13.5958 10.78 13.6846C10.2108 14.2334 9.78397 14.6449 10.8037 15.3168C11.2937 15.6397 11.6858 15.9068 12.077 16.1732C12.5042 16.4641 12.9303 16.7543 13.4817 17.1157C13.6221 17.2078 13.7563 17.3034 13.8869 17.3966C14.3841 17.751 14.8308 18.0694 15.3826 18.0187C15.7033 17.9892 16.0345 17.6876 16.2027 16.7884C16.6003 14.6632 17.3817 10.0585 17.5623 8.16103C17.5781 7.99479 17.5582 7.78203 17.5422 7.68863C17.5262 7.59524 17.4928 7.46217 17.3714 7.36366C17.2277 7.247 17.0057 7.2224 16.9064 7.22414C16.4551 7.2321 15.7626 7.47288 12.4301 8.85898Z" fill="currentColor"></path>
+									</svg>
+									<span>@cleans</span>
+								</a>
+								<a href="#" class="footer__soc">
+									<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12.0011 0C8.74209 0 8.33309 0.0142504 7.05307 0.072501C5.77556 0.131002 4.90355 0.333254 4.14054 0.630007C3.35128 0.93651 2.68178 1.34651 2.01477 2.01377C1.34726 2.68078 0.937259 3.35028 0.629756 4.13929C0.332253 4.90255 0.129751 5.77481 0.0722506 7.05182C0.015 8.33184 0 8.74109 0 12.0001C0 15.2592 0.0145004 15.6669 0.072501 16.9469C0.131252 18.2244 0.333504 19.0964 0.630007 19.8595C0.93676 20.6487 1.34676 21.3182 2.01402 21.9852C2.68078 22.6527 3.35028 23.0637 4.13904 23.3702C4.90255 23.667 5.77481 23.8692 7.05207 23.9277C8.33209 23.986 8.74084 24.0002 11.9996 24.0002C15.2589 24.0002 15.6667 23.986 16.9467 23.9277C18.2242 23.8692 19.0972 23.667 19.8607 23.3702C20.6497 23.0637 21.3182 22.6527 21.985 21.9852C22.6525 21.3182 23.0625 20.6487 23.37 19.8597C23.665 19.0965 23.8675 18.2242 23.9275 16.9472C23.985 15.6672 24 15.2592 24 12.0001C24 8.74109 23.985 8.33209 23.9275 7.05207C23.8675 5.77456 23.665 4.90255 23.37 4.13954C23.0625 3.35028 22.6525 2.68078 21.985 2.01377C21.3175 1.34626 20.65 0.93626 19.86 0.630007C19.0949 0.333254 18.2224 0.131002 16.9449 0.072501C15.6649 0.0142504 15.2574 0 11.9974 0H12.0011ZM10.9246 2.16252C11.2441 2.16202 11.6006 2.16252 12.0011 2.16252C15.2052 2.16252 15.5849 2.17402 16.8502 2.23152C18.0202 2.28502 18.6552 2.48053 19.0782 2.64478C19.6382 2.86228 20.0375 3.12228 20.4572 3.54229C20.8772 3.96229 21.1372 4.3623 21.3552 4.9223C21.5195 5.34481 21.7152 5.97981 21.7685 7.14982C21.826 8.41484 21.8385 8.79484 21.8385 11.9974C21.8385 15.1999 21.826 15.5799 21.7685 16.8449C21.715 18.0149 21.5195 18.6499 21.3552 19.0724C21.1377 19.6325 20.8772 20.0312 20.4572 20.451C20.0372 20.871 19.6385 21.131 19.0782 21.3485C18.6557 21.5135 18.0202 21.7085 16.8502 21.762C15.5852 21.8195 15.2052 21.832 12.0011 21.832C8.79684 21.832 8.41709 21.8195 7.15207 21.762C5.98206 21.708 5.34706 21.5125 4.9238 21.3482C4.3638 21.1307 3.96379 20.8707 3.54379 20.4507C3.12378 20.0307 2.86378 19.6317 2.64578 19.0714C2.48153 18.6489 2.28577 18.0139 2.23252 16.8439C2.17502 15.5789 2.16352 15.1989 2.16352 11.9944C2.16352 8.78984 2.17502 8.41184 2.23252 7.14682C2.28602 5.97681 2.48153 5.34181 2.64578 4.9188C2.86328 4.3588 3.12378 3.95879 3.54379 3.53879C3.96379 3.11878 4.3638 2.85878 4.9238 2.64078C5.34681 2.47578 5.98206 2.28077 7.15207 2.22702C8.25909 2.17702 8.68809 2.16202 10.9246 2.15952V2.16252ZM18.4067 4.15504C17.6117 4.15504 16.9667 4.7993 16.9667 5.59456C16.9667 6.38957 17.6117 7.03457 18.4067 7.03457C19.2017 7.03457 19.8467 6.38957 19.8467 5.59456C19.8467 4.79955 19.2017 4.15504 18.4067 4.15504ZM12.0011 5.83756C8.59784 5.83756 5.83856 8.59684 5.83856 12.0001C5.83856 15.4034 8.59784 18.1614 12.0011 18.1614C15.4044 18.1614 18.1627 15.4034 18.1627 12.0001C18.1627 8.59684 15.4044 5.83756 12.0011 5.83756ZM12.0011 8.00008C14.2101 8.00008 16.0012 9.79085 16.0012 12.0001C16.0012 14.2091 14.2101 16.0002 12.0011 16.0002C9.79185 16.0002 8.00108 14.2091 8.00108 12.0001C8.00108 9.79085 9.79185 8.00008 12.0011 8.00008Z" fill="currentColor"></path>
+									</svg>
+									<span>@cleans</span>
+								</a>
+								<a href="#" class="footer__soc">
+									<svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M23.9995 12.0728C23.9995 5.40465 18.6266 -0.000976562 11.9988 -0.000976562C5.37094 -0.000976562 -0.00195312 5.40465 -0.00195312 12.0728C-0.00195312 18.0992 4.38653 23.0942 10.1236 24V15.5629H7.07659V12.0728H10.1236V9.41282C10.1236 6.38682 11.9153 4.71535 14.6565 4.71535C15.9695 4.71535 17.3428 4.95117 17.3428 4.95117V7.92246H15.8296C14.3388 7.92246 13.8739 8.85316 13.8739 9.80798V12.0728H17.2022L16.6701 15.5629H13.8739V24C19.611 23.0942 23.9995 18.0992 23.9995 12.0728Z" fill="currentColor"></path>
+									</svg>
+									<span>@cleans</span>
+								</a>
+							</div>
+						</div>
+						<div class="footer__bottom">
+							<div class="footer__bottom-body">
+								<div class="footer__links">
+									<a href="#" class="footer__link link">Політика конфіденційності</a>
+									<a href="#" class="footer__link link">Умови обслуговування</a>
+								</div>
+								<div class="footer__copy">
+									© 2026 Cleans®. All content is available under the Creative Commons Attribution 4.0
+						International license unless
+						otherwise noted.
+								</div>
+							</div>
+							<nav class="footer__menu">
+								<ul class="footer__menu-list">
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link link">Послуги та ціни</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link link">Як це працює</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link link">Доставка</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link link">Відгуки</a>
+									</li>
+									<li class="footer__menu-item">
+										<a href="#" class="footer__menu-link link">Блог</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div data-fls-popup="popup-order" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close button button--small">
+						<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content" data-form-steps="steps-form" data-steps-animate="">
+						<div class="popup__step is-active" data-form-step="">
+							<div class="popup__head">
+								<div class="popup__title title title--h6">Створити замовлення</div>
+								<div class="popup__subtext">Оберіть категорію речі</div>
+							</div>
+							<div class="popup__text">
+								Щоб ми могли розрахувати орієнтовну вартість чистки та розпочати оформлення, будь ласка, оберіть
+						категорію речі, яку ви
+						плануєте нам відправити.
+							</div>
+							<div class="popup__categories categories">
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(183, 188, 181, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-1.webp">
+									<span class="categories-item__title">Верхній одяг</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(211, 211, 212, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-2.webp">
+									<span class="categories-item__title">Взуття</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(242, 225, 217, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-3.webp">
+									<span class="categories-item__title">Сумки та аксесуари</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(208, 208, 208, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-4.webp">
+									<span class="categories-item__title">Теплий одяг</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(209, 204, 191, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-5.webp">
+									<span class="categories-item__title">Повсякденний одяг</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(213, 214, 217, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-6.webp">
+									<span class="categories-item__title">Діловий одяг</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(180, 198, 219, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-7.webp">
+									<span class="categories-item__title">Дитячий одяг</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(182, 194, 223, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-8.webp">
+									<span class="categories-item__title">Сукні</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(212, 208, 197, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-9.webp">
+									<span class="categories-item__title">Військовий одяг</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(238, 213, 208, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-10.webp">
+									<span class="categories-item__title">Спець одяг</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(205, 214, 222, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-11.webp">
+									<span class="categories-item__title">Рушники та постіль</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(204, 204, 204, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-12.webp">
+									<span class="categories-item__title">Ковдри та подушки</span>
+								</button>
+								<button data-steps-next="" type="button" class="categories-item" style="--colorBg: rgba(197, 199, 195, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-13.webp">
+									<span class="categories-item__title">Штори</span>
+								</button>
+							</div>
+						</div>
+						<div class="popup__step" data-form-step="">
+							<div class="popup__head">
+								<div class="popup__title title title--h6">Створити замовлення</div>
+								<div class="popup__subtext">Оберіть конкретний виріб</div>
+							</div>
+							<div class="popup__category-head">
+								<button type="button" class="categories-item" style="--colorBg: rgba(183, 188, 181, 0.8);">
+									<img class="categories-item__img" alt="Image" loading="lazy" src="./assets/img/category/image-1.webp">
+									<span class="categories-item__title">Верхній одяг</span>
+								</button>
+								<div class="popup__text">
+									Ви обрали категорію "
+									<strong>[Назва Категорії]</strong>
+									". Чудово! Тепер, будь ласка, вкажіть
+							конкретний тип речі. Це дозволить нам
+							відобразити точний прайс-лист, адже вартість чистки, наприклад, пуховика та пальта може
+							відрізнятися.
+								</div>
+							</div>
+							<button data-fls-popup-link="popup-contacts" type="button" class="popup__consultation button button--accent button--small">
+								<span>Замовити консультацію</span>
+								<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5 8C5 8.55228 4.55228 9 4 9C3.44772 9 3 8.55228 3 8C3 7.44772 3.44772 7 4 7C4.55228 7 5 7.44772 5 8Z" fill="currentColor"></path>
+									<path d="M9 8C9 8.55228 8.55229 9 8 9C7.44772 9 7 8.55228 7 8C7 7.44772 7.44772 7 8 7C8.55229 7 9 7.44772 9 8Z" fill="currentColor"></path>
+									<path d="M12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9Z" fill="currentColor"></path>
+									<path d="M2.16466 15.8029L2.18489 15.7989C4.01434 15.4363 5.13337 14.9571 5.65284 14.6939C6.39508 14.8929 7.18324 15 8 15C12.4183 15 16 11.866 16 8C16 4.13401 12.4183 1 8 1C3.58172 1 0 4.13401 0 8C0 9.76087 0.743061 11.3699 1.96979 12.6001C1.89596 13.3711 1.69422 14.1984 1.44648 14.9181L1.44259 14.9294C1.41245 15.0167 1.38164 15.1023 1.3503 15.1861C1.30097 15.3179 1.25034 15.4451 1.19898 15.5664C1.12037 15.7521 1.27271 15.9603 1.47172 15.9277C1.61264 15.9047 1.75 15.8808 1.88382 15.8563C1.97922 15.8388 2.07283 15.821 2.16466 15.8029ZM2.96523 12.6954C2.99363 12.3988 2.88828 12.1049 2.67789 11.894C1.6173 10.8304 1 9.46809 1 8C1 4.80754 4.0044 2 8 2C11.9956 2 15 4.80754 15 8C15 11.1925 11.9956 14 8 14C7.27076 14 6.56966 13.9044 5.91182 13.728C5.67381 13.6642 5.42062 13.6905 5.20082 13.8019C4.81358 13.9981 3.96166 14.3721 2.56677 14.6945C2.75502 14.0519 2.90159 13.3601 2.96523 12.6954Z" fill="currentColor"></path>
+								</svg>
+							</button>
+							<div class="popup__subcategories subcategories">
+								<button data-steps-next="" type="button" class="subcategories__item">Зимова куртка [від XXX грн]</button>
+								<button data-steps-next="" type="button" class="subcategories__item">Пальто [від XXX грн]</button>
+								<button data-steps-next="" type="button" class="subcategories__item">Осіння куртка [від XXX грн]</button>
+								<button data-steps-next="" type="button" class="subcategories__item">Жилетка [від XXX грн]</button>
+								<button data-steps-next="" type="button" class="subcategories__item">Дублянка [від XXX грн]</button>
+								<button data-steps-next="" type="button" class="subcategories__item">Шуба [від XXX грн]</button>
+								<button data-steps-next="" type="button" class="subcategories__item">Плащ [від XXX грн]</button>
+							</div>
+							<div class="popup__btns">
+								<button data-steps-prev="" type="button" class="popup__prev button button--accent button--border">
+									<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15 8C15 7.72386 14.7761 7.5 14.5 7.5H2.70711L5.85355 4.35355C6.04882 4.15829 6.04882 3.84171 5.85355 3.64645C5.65829 3.45118 5.34171 3.45118 5.14645 3.64645L1.14645 7.64645C0.951185 7.84171 0.951185 8.15829 1.14645 8.35355L5.14645 12.3536C5.34171 12.5488 5.65829 12.5488 5.85355 12.3536C6.04882 12.1583 6.04882 11.8417 5.85355 11.6464L2.70711 8.5H14.5C14.7761 8.5 15 8.27614 15 8Z" fill="currentColor"></path>
+									</svg>
+									<span>Назад</span>
+								</button>
+							</div>
+						</div>
+						<div class="popup__step" data-form-step="">
+							<div class="popup__head">
+								<div class="popup__title title title--h6">Перевірте своє замовлення</div>
+							</div>
+							<div class="popup__text">
+								Ваше замовлення майже готове!
+								<br>
+								Нижче ви можете переглянути повний перелік обраних послуг та їх орієнтовну вартість.
+							</div>
+							<div class="popup__ordered ordered">
+								<div class="ordered__title title title--h7">Замовлені послуги:</div>
+								<div class="ordered__body">
+									<div class="ordered__table table-ordered">
+										<div class="table-ordered__head">
+											<div class="table-ordered__head-item">Тип одягу</div>
+											<div class="table-ordered__head-item">Вартість</div>
+										</div>
+										<div class="table-ordered__row">
+											<div class="table-ordered__item">Зимова куртка</div>
+											<div class="table-ordered__item">
+												<strong>359 грн</strong>
+											</div>
+											<div class="table-ordered__item">
+												<div class="tooltip-block">
+													<button type="button" class="tooltip-block__anchor">
+														<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="currentColor"></path>
+															<path d="M8.9307 6.58789L6.63969 6.875L6.55766 7.25586L7.00883 7.33789C7.3018 7.4082 7.36039 7.51367 7.29594 7.80664L6.55766 11.2754C6.3643 12.1719 6.66313 12.5938 7.36625 12.5938C7.91117 12.5938 8.54398 12.3418 8.83109 11.9961L8.91898 11.5801C8.71977 11.7559 8.4268 11.8262 8.23344 11.8262C7.95805 11.8262 7.85844 11.6328 7.92875 11.293L8.9307 6.58789Z" fill="currentColor"></path>
+															<path d="M9 4.5C9 5.05228 8.55229 5.5 8 5.5C7.44772 5.5 7 5.05228 7 4.5C7 3.94772 7.44772 3.5 8 3.5C8.55229 3.5 9 3.94772 9 4.5Z" fill="currentColor"></path>
+														</svg>
+														<span>Дод. послуги</span>
+													</button>
+													<div class="tooltip-block__dropdown">
+														<div class="tooltip-block__head">
+															<div class="tooltip-block__title">Послуги додаються після огляду речей:</div>
+															<button type="button" class="tooltip-block__close">
+																<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+																</svg>
+															</button>
+														</div>
+														<div class="tooltip-block__content">
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Глибока чистка рукавів/карманів/комірів</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Світлі речі</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Складний фасон</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Ремонт</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Заміна наповнювача</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="table-ordered__item">
+												<button type="button" class="table-ordered__delete">
+													<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="table-ordered__row">
+											<div class="table-ordered__item">Зимова куртка</div>
+											<div class="table-ordered__item">
+												<strong>359 грн</strong>
+											</div>
+											<div class="table-ordered__item">
+												<div class="tooltip-block">
+													<button type="button" class="tooltip-block__anchor">
+														<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="currentColor"></path>
+															<path d="M8.9307 6.58789L6.63969 6.875L6.55766 7.25586L7.00883 7.33789C7.3018 7.4082 7.36039 7.51367 7.29594 7.80664L6.55766 11.2754C6.3643 12.1719 6.66313 12.5938 7.36625 12.5938C7.91117 12.5938 8.54398 12.3418 8.83109 11.9961L8.91898 11.5801C8.71977 11.7559 8.4268 11.8262 8.23344 11.8262C7.95805 11.8262 7.85844 11.6328 7.92875 11.293L8.9307 6.58789Z" fill="currentColor"></path>
+															<path d="M9 4.5C9 5.05228 8.55229 5.5 8 5.5C7.44772 5.5 7 5.05228 7 4.5C7 3.94772 7.44772 3.5 8 3.5C8.55229 3.5 9 3.94772 9 4.5Z" fill="currentColor"></path>
+														</svg>
+														<span>Дод. послуги</span>
+													</button>
+													<div class="tooltip-block__dropdown">
+														<div class="tooltip-block__head">
+															<div class="tooltip-block__title">Послуги додаються після огляду речей:</div>
+															<button type="button" class="tooltip-block__close">
+																<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+																</svg>
+															</button>
+														</div>
+														<div class="tooltip-block__content">
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Глибока чистка рукавів/карманів/комірів</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Світлі речі</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Складний фасон</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Ремонт</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Заміна наповнювача</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="table-ordered__item">
+												<button type="button" class="table-ordered__delete">
+													<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="table-ordered__row">
+											<div class="table-ordered__item">Зимова куртка</div>
+											<div class="table-ordered__item">
+												<strong>359 грн</strong>
+											</div>
+											<div class="table-ordered__item">
+												<div class="tooltip-block">
+													<button type="button" class="tooltip-block__anchor">
+														<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="currentColor"></path>
+															<path d="M8.9307 6.58789L6.63969 6.875L6.55766 7.25586L7.00883 7.33789C7.3018 7.4082 7.36039 7.51367 7.29594 7.80664L6.55766 11.2754C6.3643 12.1719 6.66313 12.5938 7.36625 12.5938C7.91117 12.5938 8.54398 12.3418 8.83109 11.9961L8.91898 11.5801C8.71977 11.7559 8.4268 11.8262 8.23344 11.8262C7.95805 11.8262 7.85844 11.6328 7.92875 11.293L8.9307 6.58789Z" fill="currentColor"></path>
+															<path d="M9 4.5C9 5.05228 8.55229 5.5 8 5.5C7.44772 5.5 7 5.05228 7 4.5C7 3.94772 7.44772 3.5 8 3.5C8.55229 3.5 9 3.94772 9 4.5Z" fill="currentColor"></path>
+														</svg>
+														<span>Дод. послуги</span>
+													</button>
+													<div class="tooltip-block__dropdown">
+														<div class="tooltip-block__head">
+															<div class="tooltip-block__title">Послуги додаються після огляду речей:</div>
+															<button type="button" class="tooltip-block__close">
+																<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+																</svg>
+															</button>
+														</div>
+														<div class="tooltip-block__content">
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Глибока чистка рукавів/карманів/комірів</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Світлі речі</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Складний фасон</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Ремонт</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Заміна наповнювача</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="table-ordered__item">
+												<button type="button" class="table-ordered__delete">
+													<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="table-ordered__row">
+											<div class="table-ordered__item">Зимова куртка</div>
+											<div class="table-ordered__item">
+												<strong>359 грн</strong>
+											</div>
+											<div class="table-ordered__item">
+												<div class="tooltip-block">
+													<button type="button" class="tooltip-block__anchor">
+														<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="currentColor"></path>
+															<path d="M8.9307 6.58789L6.63969 6.875L6.55766 7.25586L7.00883 7.33789C7.3018 7.4082 7.36039 7.51367 7.29594 7.80664L6.55766 11.2754C6.3643 12.1719 6.66313 12.5938 7.36625 12.5938C7.91117 12.5938 8.54398 12.3418 8.83109 11.9961L8.91898 11.5801C8.71977 11.7559 8.4268 11.8262 8.23344 11.8262C7.95805 11.8262 7.85844 11.6328 7.92875 11.293L8.9307 6.58789Z" fill="currentColor"></path>
+															<path d="M9 4.5C9 5.05228 8.55229 5.5 8 5.5C7.44772 5.5 7 5.05228 7 4.5C7 3.94772 7.44772 3.5 8 3.5C8.55229 3.5 9 3.94772 9 4.5Z" fill="currentColor"></path>
+														</svg>
+														<span>Дод. послуги</span>
+													</button>
+													<div class="tooltip-block__dropdown">
+														<div class="tooltip-block__head">
+															<div class="tooltip-block__title">Послуги додаються після огляду речей:</div>
+															<button type="button" class="tooltip-block__close">
+																<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+																</svg>
+															</button>
+														</div>
+														<div class="tooltip-block__content">
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Глибока чистка рукавів/карманів/комірів</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Світлі речі</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Складний фасон</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Ремонт</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Заміна наповнювача</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="table-ordered__item">
+												<button type="button" class="table-ordered__delete">
+													<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="table-ordered__row">
+											<div class="table-ordered__item">Зимова куртка</div>
+											<div class="table-ordered__item">
+												<strong>359 грн</strong>
+											</div>
+											<div class="table-ordered__item">
+												<div class="tooltip-block">
+													<button type="button" class="tooltip-block__anchor">
+														<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="currentColor"></path>
+															<path d="M8.9307 6.58789L6.63969 6.875L6.55766 7.25586L7.00883 7.33789C7.3018 7.4082 7.36039 7.51367 7.29594 7.80664L6.55766 11.2754C6.3643 12.1719 6.66313 12.5938 7.36625 12.5938C7.91117 12.5938 8.54398 12.3418 8.83109 11.9961L8.91898 11.5801C8.71977 11.7559 8.4268 11.8262 8.23344 11.8262C7.95805 11.8262 7.85844 11.6328 7.92875 11.293L8.9307 6.58789Z" fill="currentColor"></path>
+															<path d="M9 4.5C9 5.05228 8.55229 5.5 8 5.5C7.44772 5.5 7 5.05228 7 4.5C7 3.94772 7.44772 3.5 8 3.5C8.55229 3.5 9 3.94772 9 4.5Z" fill="currentColor"></path>
+														</svg>
+														<span>Дод. послуги</span>
+													</button>
+													<div class="tooltip-block__dropdown">
+														<div class="tooltip-block__head">
+															<div class="tooltip-block__title">Послуги додаються після огляду речей:</div>
+															<button type="button" class="tooltip-block__close">
+																<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+																</svg>
+															</button>
+														</div>
+														<div class="tooltip-block__content">
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Глибока чистка рукавів/карманів/комірів</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Світлі речі</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Складний фасон</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Ремонт</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Заміна наповнювача</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="table-ordered__item">
+												<button type="button" class="table-ordered__delete">
+													<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+										<div class="table-ordered__row">
+											<div class="table-ordered__item">Зимова куртка</div>
+											<div class="table-ordered__item">
+												<strong>359 грн</strong>
+											</div>
+											<div class="table-ordered__item">
+												<div class="tooltip-block">
+													<button type="button" class="tooltip-block__anchor">
+														<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8C15 11.866 11.866 15 8 15ZM8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16Z" fill="currentColor"></path>
+															<path d="M8.9307 6.58789L6.63969 6.875L6.55766 7.25586L7.00883 7.33789C7.3018 7.4082 7.36039 7.51367 7.29594 7.80664L6.55766 11.2754C6.3643 12.1719 6.66313 12.5938 7.36625 12.5938C7.91117 12.5938 8.54398 12.3418 8.83109 11.9961L8.91898 11.5801C8.71977 11.7559 8.4268 11.8262 8.23344 11.8262C7.95805 11.8262 7.85844 11.6328 7.92875 11.293L8.9307 6.58789Z" fill="currentColor"></path>
+															<path d="M9 4.5C9 5.05228 8.55229 5.5 8 5.5C7.44772 5.5 7 5.05228 7 4.5C7 3.94772 7.44772 3.5 8 3.5C8.55229 3.5 9 3.94772 9 4.5Z" fill="currentColor"></path>
+														</svg>
+														<span>Дод. послуги</span>
+													</button>
+													<div class="tooltip-block__dropdown">
+														<div class="tooltip-block__head">
+															<div class="tooltip-block__title">Послуги додаються після огляду речей:</div>
+															<button type="button" class="tooltip-block__close">
+																<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+																</svg>
+															</button>
+														</div>
+														<div class="tooltip-block__content">
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Глибока чистка рукавів/карманів/комірів</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Світлі речі</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Складний фасон</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Ремонт</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Заміна наповнювача</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+															<div class="tooltip-block__row">
+																<div class="tooltip-block__label">Послуга XXX</div>
+																<div class="tooltip-block__value">XXXX грн</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="table-ordered__item">
+												<button type="button" class="table-ordered__delete">
+													<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="ordered__bottom">
+										<button data-steps-first="" type="button" class="ordered__add button button--accent button--border button--small button--fw">Додати ще</button>
+									</div>
+								</div>
+								<div class="ordered__total">
+									<div class="ordered__total-row">
+										<div class="ordered__total-label">Орієнтовна сума до сплати:</div>
+										<div class="ordered__total-value">638 грн</div>
+									</div>
+								</div>
+							</div>
+							<div class="popup__btns">
+								<button data-steps-next="" type="button" class="popup__next button button--accent">
+									<span>Перейти до оформлення</span>
+									<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1 8C1 7.72386 1.22386 7.5 1.5 7.5H13.2929L10.1464 4.35355C9.95118 4.15829 9.95118 3.84171 10.1464 3.64645C10.3417 3.45118 10.6583 3.45118 10.8536 3.64645L14.8536 7.64645C15.0488 7.84171 15.0488 8.15829 14.8536 8.35355L10.8536 12.3536C10.6583 12.5488 10.3417 12.5488 10.1464 12.3536C9.95118 12.1583 9.95118 11.8417 10.1464 11.6464L13.2929 8.5H1.5C1.22386 8.5 1 8.27614 1 8Z" fill="currentColor"></path>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="popup__step" data-form-step="">
+							<div class="popup__head">
+								<div class="popup__title title title--h6">Ваші контактні дані та безкоштовна доставка</div>
+							</div>
+							<div class="popup__text">
+								Щоб ми могли безкоштовно забрати ваші речі та розпочати роботу, заповніть, будь ласка, коротку
+						форму з контактними
+						даними.
+							</div>
+							<form action="#" class="popup__form">
+								<div class="popup__form-block">
+									<div class="popup__form-inputs">
+										<div class="input-field">
+											<label class="input-field__label">Ваше ім'я</label>
+											<input autocomplete="off" type="text" name="name" placeholder="напр. Іван" class="input-field__input input is-error">
+											<div class="input-field__error">Помилка</div>
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Ваше прізвище</label>
+											<input autocomplete="off" type="text" name="lastname" placeholder="напр. Мазепа" class="input-field__input input">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Ваш телефон</label>
+											<input autocomplete="off" type="tel" name="phone" placeholder="+38 (096) ХХХ ХХ ХХ" class="input-field__input input" data-fls-input-mask="+38 (999) 999-99-99">
+										</div>
+									</div>
+								</div>
+								<div class="popup__form-block">
+									<div class="popup__form-text">З якого відділення Нової Пошти вам зручніше відправляти та отримувати посилки</div>
+									<div class="popup__form-inputs">
+										<div class="input-field">
+											<label class="input-field__label">Місто</label>
+											<input autocomplete="off" type="text" name="name" placeholder="напр. Дніпро" class="input-field__input input">
+										</div>
+										<div class="input-field">
+											<label class="input-field__label">Відділення</label>
+											<select name="delivery" data-fls-select="" data-fls-select-search="">
+												<option value="" selected>Оберіть відділення</option>
+												<option value="1">Відділення №1</option>
+												<option value="2">Відділення №2</option>
+												<option value="3">Відділення №3</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="popup__form-bottom">
+									<label data-fls-checkbox="" class="checkbox">
+										<input class="checkbox__input" type="checkbox" value="1" name="personal data">
+										<span class="checkbox__text">Даю згоду на обробку персональних даних.</span>
+									</label>
+									<div class="popup__form-btns">
+										<button data-steps-prev="" type="button" class="popup__form-send button button--accent button--border">
+											<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15 8C15 7.72386 14.7761 7.5 14.5 7.5H2.70711L5.85355 4.35355C6.04882 4.15829 6.04882 3.84171 5.85355 3.64645C5.65829 3.45118 5.34171 3.45118 5.14645 3.64645L1.14645 7.64645C0.951185 7.84171 0.951185 8.15829 1.14645 8.35355L5.14645 12.3536C5.34171 12.5488 5.65829 12.5488 5.85355 12.3536C6.04882 12.1583 6.04882 11.8417 5.85355 11.6464L2.70711 8.5H14.5C14.7761 8.5 15 8.27614 15 8Z" fill="currentColor"></path>
+											</svg>
+											<span>Назад</span>
+										</button>
+										<button data-fls-popup-link="popup-success" type="submit" class="popup__form-send button button--accent">Замовити</button>
+									</div>
+								</div>
+								<div class="popup__form-info">* Оплата здійснюється після виконання послуги</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-success" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close button button--small">
+						<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<div class="popup__head">
+							<div class="popup__title title title--h6">
+								🥳 Дякуємо за довіру!
+								<br>
+								Ваша заявка успішно отримана.
+							</div>
+						</div>
+						<div class="popup__text">
+							Ми отримали ваше заявку. Це може бути запит на консультацію або фіналізоване замовлення на чистку —
+					в будь-якому
+					випадку, ми вже почали роботу!
+						</div>
+						<div class="popup__subtext">
+							<strong>
+								Наш менеджер або технолог опрацює отриману інформацію та зв'яжеться з вами (телефоном або у
+						месенджері) для
+						підтвердження деталей та узгодження наступних кроків.
+							</strong>
+						</div>
+						<div class="popup__subtext">Очікуйте дзвінка протягом найближчих 15 хвилин
+					(у робочий час Cleans).</div>
+						<figure class="popup__success-img">
+							<img alt="Image" loading="lazy" src="./assets/img/message-success.webp">
+						</figure>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div data-fls-popup="popup-contacts" aria-hidden="true" class="popup">
+			<div data-fls-popup-wrapper="" class="popup__wrapper">
+				<div data-fls-popup-body="" class="popup__body">
+					<button data-fls-popup-close="" type="button" class="popup__close button button--small">
+						<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.34171 1.95118 2.65829 1.95118 2.85355 2.14645L8 7.29289L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0488 2.34171 14.0488 2.65829 13.8536 2.85355L8.70711 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.6583 14.0488 13.3417 14.0488 13.1464 13.8536L8 8.70711L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.95119 13.6583 1.95119 13.3417 2.14645 13.1464L7.29289 8L2.14645 2.85355Z" fill="currentColor"></path>
+						</svg>
+					</button>
+					<div data-fls-popup-content="" class="popup__content">
+						<figure class="popup__img">
+							<img alt="Image" loading="lazy" src="./assets/img/popup-contacts-img.webp">
+						</figure>
+						<div class="popup__title title title--h6">
+							Маєте питання щодо послуг,
+							<br>
+							цін, термінів чи доставки?
+						</div>
+						<div class="popup__subtext">
+							<strong>
+								Залиште свій номер телефону, і наш експерт Cleans оперативно зателефонує вам, щоб детально
+						проконсультувати та допомогти
+						вирішити будь-яке питання щодо догляду за вашими речами.
+							</strong>
+						</div>
+						<form action="#" class="popup__form">
+							<div class="popup__form-block">
+								<div class="popup__form-inputs">
+									<div class="input-field">
+										<label class="input-field__label">Ваше ім'я</label>
+										<input autocomplete="off" type="text" name="name" placeholder="напр. Іван" class="input-field__input input">
+									</div>
+									<div class="input-field">
+										<label class="input-field__label">Ваш телефон</label>
+										<input autocomplete="off" type="tel" name="phone" placeholder="+38 (096) ХХХ ХХ ХХ" class="input-field__input input" data-fls-input-mask="+38 (999) 999-99-99">
+									</div>
+								</div>
+							</div>
+							<div class="popup__form-bottom">
+								<label data-fls-checkbox="" class="checkbox">
+									<input class="checkbox__input" type="checkbox" value="1" name="personal data">
+									<span class="checkbox__text">Даю згоду на обробку персональних даних.</span>
+								</label>
+								<div class="popup__form-btns">
+									<button data-fls-popup-link="popup-success" type="submit" class="popup__form-send button button--accent">Зателефонуйте мені</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="order-modal fixed-block" data-fls-lp="">
+			<div class="order-modal__body">
+				<div class="order-modal__title">Ваше замовлення</div>
+				<div class="order-modal__price">289 грн</div>
+				<button data-fls-popup-link="popup-order" type="button" class="order-modal__btn button button--accent button--small">до замовлення</button>
+			</div>
+		</div>
+	</body>
+</html>

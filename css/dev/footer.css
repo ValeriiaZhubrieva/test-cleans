@@ -1,0 +1,136 @@
+.footer {
+  padding: 176px 0 24px 0;
+  background-color: var(--colors-purple-900);
+  background-image: url("../assets/img/footer-bg.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: var(--colors-base-white-100);
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+.footer__content > *:not(:last-child) {
+  margin-bottom: 64px;
+}
+.footer__logo {
+  max-width: 248px;
+  width: 100%;
+  display: flex;
+}
+.footer__logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.footer a.footer__logo {
+  transition: opacity 0.3s;
+}
+.footer__body {
+  display: flex;
+  flex-direction: column;
+}
+.footer__body > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+.footer__phones {
+  max-width: fit-content;
+  transition: color 0.3s;
+}
+.footer__title {
+  line-height: 140%;
+  color: var(--colors-gray-300);
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.footer__soc {
+  max-width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: var(--colors-gray-100);
+  transition: color 0.3s;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.footer__bottom-body {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+.footer__copy {
+  font-size: 12px;
+  line-height: 130%;
+}
+.footer__menu {
+  align-self: end;
+}
+.footer__menu-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 47.99875em) {
+  .footer {
+    padding: 124px 0 24px 0;
+  }
+  .footer__content > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__menu {
+    align-self: stretch;
+    order: -1;
+  }
+}
+@media (max-width: 29.99875em) {
+  .footer {
+    background-image: url("../assets/img/footer-bg-mob.webp");
+  }
+  .footer__logo {
+    max-width: 192px;
+  }
+  .footer__body > *:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .footer__links {
+    justify-content: center;
+    gap: 0;
+  }
+  .footer__copy {
+    text-align: center;
+  }
+  .footer__menu-list {
+    justify-content: center;
+  }
+}
+@media (any-hover: hover) {
+  .footer a.footer__logo:hover {
+    opacity: 0.7;
+  }
+  .footer__phones:hover {
+    color: var(--colors-purple-400);
+  }
+  .footer__soc:hover {
+    color: var(--colors-purple-400);
+  }
+}

@@ -1,0 +1,189 @@
+.select {
+  min-width: 0;
+  position: relative;
+}
+.select__body {
+  position: relative;
+}
+.select__title {
+  cursor: pointer;
+  text-align: left;
+  border: 1px solid var(--colors-gray-200);
+  background-color: var(--colors-base-white-100);
+  border-radius: 8px;
+  padding: 4px 12px;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--colors-gray-700);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  transition: border 0.3s;
+}
+.--select-focus .select__title {
+  border-color: var(--colors-purple-400);
+}
+.select__value {
+  flex: 1 1 auto;
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+.select__value > * {
+  flex: 1 1 auto;
+}
+.select__value:after {
+  content: "";
+  align-self: stretch;
+  flex: 0 0 16px;
+  transition: all 0.3s ease 0s;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.64645 4.64645C1.84171 4.45118 2.15829 4.45118 2.35355 4.64645L8 10.2929L13.6464 4.64645C13.8417 4.45119 14.1583 4.45119 14.3536 4.64645C14.5488 4.84171 14.5488 5.15829 14.3536 5.35356L8.35355 11.3536C8.15829 11.5488 7.84171 11.5488 7.64645 11.3536L1.64645 5.35355C1.45118 5.15829 1.45118 4.84171 1.64645 4.64645Z' fill='%23495057'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.--select-open .select__value:after {
+  transform: rotate(-180deg);
+}
+.select__value.--select-pseudo-label::before {
+  content: attr(data-pseudo-label);
+  opacity: 0.5;
+}
+.select__content {
+  flex: 1 1 auto;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select__text {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select__input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  height: 100%;
+}
+.--select-active .select__input::placeholder {
+  color: var(--colors-gray-700);
+}
+.--select-focus .select__input {
+  outline: none;
+}
+.--select-focus .select__input::placeholder {
+  opacity: 0.5;
+}
+.select__options {
+  color: var(--colors-gray-700);
+  position: absolute;
+  top: calc(100% + 3px);
+  border-radius: 8px;
+  min-width: 100%;
+  left: 0;
+  background-color: var(--colors-base-white-100);
+  border: 1px solid var(--colors-gray-200);
+  padding: 10px 0px;
+}
+.select__scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 200px;
+}
+.select__option {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--colors-gray-700);
+}
+.select__option.--select-selected {
+  background-color: var(--colors-purple-50);
+}
+.select__row {
+  display: inline-flex;
+  align-items: center;
+}
+.select--show-top .select__options {
+  top: auto;
+  bottom: calc(100% + 3px);
+}
+.--select-tag {
+  cursor: pointer;
+}input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}.checkbox {
+  display: inline-block;
+  position: relative;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.3s, border 0.3s;
+}
+.checkbox__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.checkbox__input:focus-visible + .checkbox__text {
+  outline: 1px solid var(--colors-purple-500);
+}
+.checkbox__input:checked + .checkbox__text::before {
+  border-color: var(--colors-purple-500);
+  background-color: var(--colors-purple-500);
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.7 18.025L4 12.325L5.425 10.9L9.7 15.175L18.875 6L20.3 7.425L9.7 18.025Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.checkbox__text {
+  position: relative;
+  gap: 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 140%;
+  border-radius: 4px;
+  color: var(--colors-gray-600);
+}
+.checkbox__text:before {
+  content: "";
+  align-self: flex-start;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--colors-gray-400);
+  border-radius: 4px;
+  background: var(--colors-base-white-100);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+@media (any-hover: hover) {
+  .select__title:hover {
+    border-color: var(--colors-purple-400);
+  }
+  .select__option:hover {
+    background-color: var(--colors-purple-100);
+  }
+  .checkbox:hover {
+    background-color: var(--colors-base-white-100);
+    border-color: var(--colors-gray-200);
+  }
+}

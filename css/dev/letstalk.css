@@ -1,0 +1,127 @@
+.letstalk {
+  background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+  position: relative;
+  z-index: 5;
+  display: grid;
+  padding-top: 96px;
+}
+.letstalk__container {
+  max-width: 1848px;
+  width: 100%;
+  margin-bottom: -96px;
+}
+.letstalk__wrapper {
+  background-color: #f8f9fa;
+  background-image: url("../assets/img/letstalk/bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 69px right;
+  background-size: 100% auto;
+  border-radius: 40px;
+  padding: 24px;
+  min-height: 524px;
+  display: grid;
+}
+.letstalk__body {
+  max-width: 1176px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.letstalk__content {
+  max-width: 552px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.letstalk__content > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+.letstalk__text {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+}
+.letstalk__text:not(:last-child) {
+  margin-bottom: 32px;
+}
+.letstalk__form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.letstalk__input {
+  padding: 10px 16px;
+  height: 52px;
+}
+.letstalk__img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0px, -59%);
+  z-index: -1;
+  max-width: 63%;
+}
+@media (max-width: 61.99875em) {
+  .letstalk__wrapper {
+    min-height: 0;
+  }
+  .letstalk__img {
+    transform: translate(20%, -59%);
+  }
+}
+@media (max-width: 47.99875em) {
+  .letstalk {
+    padding-top: 0;
+  }
+  .letstalk__container {
+    margin-bottom: -64px;
+  }
+  .letstalk__wrapper {
+    padding: 40px 16px;
+  }
+  .letstalk__body {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 48px;
+  }
+  .letstalk__content {
+    max-width: 100%;
+  }
+  .letstalk__content > *:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .letstalk__img {
+    align-self: center;
+    position: static;
+    top: 0;
+    transform: translate(0px, 0px);
+  }
+}
+@media (max-width: 29.99875em) {
+  .letstalk__wrapper {
+    background-position: bottom 24px right 30%;
+    background-size: 1300px auto;
+  }
+  .letstalk__text {
+    font-size: 16px;
+  }
+  .letstalk__text:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .letstalk__form {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .letstalk__form .letstalk__btn {
+    margin-left: auto;
+  }
+  .letstalk__img {
+    max-width: none;
+    margin: 0 -16px;
+  }
+}

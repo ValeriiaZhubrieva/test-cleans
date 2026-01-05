@@ -1,0 +1,120 @@
+.topinfo {
+  background-color: var(--colors-purple-500);
+  background-image: url("../assets/img/topinfo-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  color: var(--colors-purple-50);
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+.topinfo.hide {
+  max-height: 0;
+}
+.topinfo__container {
+  max-width: 1848px;
+}
+.topinfo__body {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.topinfo__img {
+  align-self: stretch;
+  margin: -5px 0;
+}
+.topinfo__content {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.topinfo__content-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.topinfo__logo {
+  align-self: start;
+  margin-top: 5px;
+  flex-shrink: 0;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topinfo__logo img {
+  width: 100%;
+  object-fit: cover;
+}
+.topinfo__text {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 140%;
+}
+.topinfo__btn {
+  align-self: start;
+  margin-left: auto;
+}
+.topinfo__close {
+  align-self: start;
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  display: grid;
+  place-content: center;
+  color: var(--colors-purple-50);
+  transition: background 0.3s;
+}
+@media (max-width: 75.5em) {
+  .topinfo__img {
+    display: none;
+  }
+  .topinfo__close {
+    margin-top: 0;
+  }
+}
+@media (max-width: 47.99875em) {
+  .topinfo__body {
+    padding: 12px 0;
+    gap: 12px;
+  }
+  .topinfo__content {
+    gap: 12px;
+  }
+  .topinfo__content-body {
+    gap: 8px;
+  }
+  .topinfo__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 40.62375em) {
+  .topinfo__content {
+    flex-wrap: wrap;
+  }
+  .topinfo__logo {
+    margin-top: 0;
+  }
+}
+@media (max-width: 29.99875em) {
+  .topinfo__logo {
+    width: 40px;
+    height: 40px;
+  }
+  .topinfo__logo img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+}
+@media (any-hover: hover) {
+  .topinfo__close:hover {
+    background-color: var(--colors-purple-400);
+  }
+}

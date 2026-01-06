@@ -14,7 +14,7 @@
   max-width: 1572px;
 }
 .header__body {
-  margin-top: 32px;
+  margin-top: 16px;
   display: flex;
   align-items: center;
   gap: 24px;

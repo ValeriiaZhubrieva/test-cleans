@@ -65,13 +65,6 @@ window.stepsFormBlock = function() {
       const nextBtns = form.querySelectorAll("[data-steps-next]");
       const firstStepBtns = form.querySelectorAll("[data-steps-first]");
       const openStepBtns = document.querySelectorAll("[data-open-step]");
-      let isAnimating = false;
-      function isStepsAnimate(form2) {
-        if (form2.hasAttribute("data-steps-animate")) {
-          return form2.dataset.stepsAnimate > 0 ? Number(form2.dataset.stepsAnimate) : 500;
-        }
-      }
-      const stepsAnimate = isStepsAnimate(form);
       function getCurrentStepIndex() {
         let activeIndex = 0;
         steps.forEach((step, index) => {
@@ -81,95 +74,19 @@ window.stepsFormBlock = function() {
         });
         return activeIndex;
       }
-      function flipOut(target, duration = 500) {
-        return new Promise((resolve) => {
-          target.style.display = "flex";
-          target.style.transformStyle = "preserve-3d";
-          target.style.transition = `transform ${duration}ms cubic-bezier(0.4, 0, 0.2, 1), opacity ${duration}ms ease`;
-          target.style.transform = "rotateY(0deg)";
-          target.style.opacity = "1";
-          requestAnimationFrame(() => {
-            target.style.transform = "rotateY(-90deg)";
-            target.style.opacity = "0";
-          });
-          setTimeout(() => {
-            target.style.display = "none";
-            target.style.removeProperty("transform");
-            target.style.removeProperty("opacity");
-            target.style.removeProperty("transition");
-            target.style.removeProperty("transform-style");
-            resolve();
-          }, duration);
-        });
-      }
-      function flipIn(target, duration = 500) {
-        return new Promise((resolve) => {
-          target.style.display = "flex";
-          target.style.transformStyle = "preserve-3d";
-          target.style.transition = `transform ${duration}ms cubic-bezier(0.4, 0, 0.2, 1), opacity ${duration}ms ease`;
-          target.style.transform = "rotateY(90deg)";
-          target.style.opacity = "0";
-          requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-              target.style.transform = "rotateY(0deg)";
-              target.style.opacity = "1";
-            });
-          });
-          setTimeout(() => {
-            target.style.removeProperty("transform");
-            target.style.removeProperty("opacity");
-            target.style.removeProperty("transition");
-            target.style.removeProperty("transform-style");
-            resolve();
-          }, duration);
-        });
-      }
-      async function goToStep(targetIndex) {
-        if (isAnimating || targetIndex < 0 || targetIndex >= steps.length) return;
+      function goToStep(targetIndex) {
+        if (targetIndex < 0 || targetIndex >= steps.length) return;
         const currentIndex2 = getCurrentStepIndex();
         if (currentIndex2 === targetIndex) return;
-        isAnimating = true;
-        steps[currentIndex2];
-        const targetStep = steps[targetIndex];
-        const currentHeight = form.offsetHeight;
-        targetStep.style.display = "flex";
-        targetStep.style.opacity = "0";
-        targetStep.style.position = "absolute";
-        const targetHeight = targetStep.offsetHeight;
-        targetStep.style.display = "none";
-        targetStep.style.removeProperty("opacity");
-        targetStep.style.removeProperty("position");
-        form.style.height = currentHeight + "px";
-        form.style.overflow = "hidden";
-        if (stepsAnimate) {
-          form.style.transition = `height ${stepsAnimate}ms cubic-bezier(0.4, 0, 0.2, 1)`;
-        }
-        const promises = [];
         steps.forEach((step, index) => {
           if (index === targetIndex) {
             step.classList.add("is-active");
-            if (stepsAnimate) {
-              promises.push(flipIn(step, stepsAnimate));
-            } else {
-              step.style.display = "flex";
-            }
-          } else if (step.classList.contains("is-active")) {
+            step.style.display = "flex";
+          } else {
             step.classList.remove("is-active");
-            if (stepsAnimate) {
-              promises.push(flipOut(step, stepsAnimate));
-            } else {
-              step.style.display = "none";
-            }
+            step.style.display = "none";
           }
         });
-        requestAnimationFrame(() => {
-          form.style.height = targetHeight + "px";
-        });
-        await Promise.all(promises);
-        form.style.removeProperty("height");
-        form.style.removeProperty("overflow");
-        form.style.removeProperty("transition");
-        isAnimating = false;
       }
       prevBtns.forEach((prevBtn) => {
         prevBtn.addEventListener("click", () => {

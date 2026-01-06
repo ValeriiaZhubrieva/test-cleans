@@ -41,10 +41,10 @@
   max-width: fit-content;
   display: block;
 }
-.text-section__content .divider:not(:first-child) {
+.text-section__content hr:not(:first-child) {
   margin-top: 32px;
 }
-.text-section__content .divider:not(:last-child) {
+.text-section__content hr:not(:last-child) {
   margin-bottom: 32px;
 }
 .text-section__content h1,
@@ -121,6 +121,19 @@
 .text-section__content table td {
   border: 1px solid var(--colors-gray-500);
   padding: 8px 12px;
+}
+.text-section__content blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--colors-gray-100);
+  padding: 32px;
+}
+.text-section__content blockquote:not(:first-child) {
+  margin-top: 32px;
+}
+.text-section__content blockquote:not(:last-child) {
+  margin-bottom: 32px;
 }
 .text-section__cases {
   padding: 24px 0;
@@ -244,10 +257,10 @@
   .text-section__content img:not(:last-child) {
     margin-bottom: 24px;
   }
-  .text-section__content .divider:not(:first-child) {
+  .text-section__content hr:not(:first-child) {
     margin-top: 24px;
   }
-  .text-section__content .divider:not(:last-child) {
+  .text-section__content hr:not(:last-child) {
     margin-bottom: 24px;
   }
   .text-section__content h1:not(:first-child),
@@ -268,6 +281,15 @@
     margin-top: 24px;
   }
   .text-section__content table:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .text-section__content blockquote {
+    padding: 20px;
+  }
+  .text-section__content blockquote:not(:first-child) {
+    margin-top: 24px;
+  }
+  .text-section__content blockquote:not(:last-child) {
     margin-bottom: 24px;
   }
   .text-section__content {

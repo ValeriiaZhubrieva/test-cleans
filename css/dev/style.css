@@ -725,13 +725,13 @@ textarea.input {
   letter-spacing: 0.01em;
 }
 
-.divider {
+hr {
   border-bottom: 4px solid var(--colors-purple-600);
 }
-.divider:not(:first-child) {
+hr:not(:first-child) {
   margin-top: 32px;
 }
-.divider:not(:last-child) {
+hr:not(:last-child) {
   margin-bottom: 32px;
 }
 @media (max-width: 61.99875em) {
@@ -770,10 +770,10 @@ textarea.input {
   .order-modal__price {
     font-size: 18px;
   }
-  .divider:not(:first-child) {
+  hr:not(:first-child) {
     margin-top: 24px;
   }
-  .divider:not(:last-child) {
+  hr:not(:last-child) {
     margin-bottom: 24px;
   }
 }

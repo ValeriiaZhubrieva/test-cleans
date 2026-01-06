@@ -390,3 +390,26 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   totalElements.forEach((el) => observer.observe(el));
 });
+const videoBlockPreview = document.querySelectorAll("[data-video-autoplay]");
+if (videoBlockPreview.length) {
+  videoBlockPreview.forEach((block) => {
+    const videoBlockPreviewVideo = block.querySelector("video");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            videoBlockPreviewVideo.play().catch(() => {
+            });
+          } else {
+            videoBlockPreviewVideo.pause();
+            videoBlockPreviewVideo.currentTime = 0;
+          }
+        });
+      },
+      {
+        threshold: 0.2
+      }
+    );
+    observer.observe(block);
+  });
+}
